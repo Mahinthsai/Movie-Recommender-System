@@ -14,7 +14,7 @@ This project is a movie recommender system built using **Streamlit**. It lets us
 
 ## Live Demo
 
-Try out the Movie Recommender System! 👉🏻 [![Experience It! 🌟](https://img.shields.io/badge/Experience%20It!-blue)](https://movie-recommender-system-kazj3trrugdd2wk68rvpjc.streamlit.app/)
+Try out the Movie Recommender System! 👉🏻 [![Experience It! 🌟](https://img.shields.io/badge/Experience%20It!-blue)](https://movie-recommender-system-rqdt.onrender.com/)
 
 <br>
 
