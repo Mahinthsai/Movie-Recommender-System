@@ -1,16 +1,16 @@
+import os
+import streamlit as st
+TMDB_API_KEY = os.getenv("TMDB_API_KEY")
+
+if not TMDB_API_KEY:
+    st.error("TMDB API key is missing! Please set it in Render environment variables.")
+
 import streamlit as st
 import pickle
 import requests
 from requests.adapters import HTTPAdapter
 from requests.packages.urllib3.util.retry import Retry
-import os
-import streamlit as st
 
-# Fetch API key from environment variables
-TMDB_API_KEY = os.getenv("TMDB_API_KEY")
-
-if not TMDB_API_KEY:
-    st.error("TMDB API key is missing! Please set it in Render environment variables.")
 
 # ------------------------------
 # Page Configuration
@@ -36,7 +36,6 @@ if "random_movie" not in st.session_state:
 # ------------------------------
 # TMDB API and Helper Functions
 # ------------------------------
-TMDB_API_KEY = st.secrets["tmdb"]["api_key"]
 
 def requests_retry_session(
     retries=5,
