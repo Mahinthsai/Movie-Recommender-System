@@ -3,6 +3,14 @@ import pickle
 import requests
 from requests.adapters import HTTPAdapter
 from requests.packages.urllib3.util.retry import Retry
+import os
+import streamlit as st
+
+# Fetch API key from environment variables
+TMDB_API_KEY = os.getenv("TMDB_API_KEY")
+
+if not TMDB_API_KEY:
+    st.error("TMDB API key is missing! Please set it in Render environment variables.")
 
 # ------------------------------
 # Page Configuration
